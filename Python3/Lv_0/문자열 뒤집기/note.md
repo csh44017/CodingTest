@@ -1,4 +1,4 @@
-#slice  
+# slice  
 slice의 항목은 다음과 같다.
 ```html  
 [start:stop:step]
@@ -12,8 +12,8 @@ print(reversed_string)
 ```  
 <br>  
 
-#reversed()
-반대방향의 iterator를 리턴한다.
+# reversed()  
+reversed()는 반대방향의 iterator를 리턴한다.
 <br>  
 
 join() 함수를 통해 리턴된 iterator의 데이터를 하나로 합칠 수 있다.
