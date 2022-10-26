@@ -1,4 +1,4 @@
-#slice  
+# slice  
 slice의 항목은 다음과 같다.
 ```html  
 [start:stop:step]
@@ -12,7 +12,7 @@ print(reversed_string)
 ```  
 <br>  
 
-#reversed()
+# reversed()
 반대방향의 iterator를 리턴한다.
 <br>  
 
