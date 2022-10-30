@@ -9,6 +9,7 @@ arr = np.array(li)
 ```  
 
 # np.array to list  
+list(arr) 를 사용하면 'object of type ndarray is not json serializable' 오류가 발생할 수 있다.
 - tolist()  
 ```python  
 import numpy as np
