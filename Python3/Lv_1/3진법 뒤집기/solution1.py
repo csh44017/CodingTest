@@ -1,6 +1,6 @@
 import string
 
-tmp = string.digits+string.ascii_lowercase
+tmp = string.digits
 def convert(num, base) :
     q, r = divmod(num, base)
     if q == 0:
