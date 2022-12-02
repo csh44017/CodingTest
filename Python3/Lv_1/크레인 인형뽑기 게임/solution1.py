@@ -1,6 +1,6 @@
 def solution(board, moves):
     result = 0
-    basket = [-1]
+    basket = [0]
     for col in moves:
         row = 0
         while row < len(board):
@@ -9,7 +9,7 @@ def solution(board, moves):
                 board[row][col-1] = 0
                 if basket[-1] == doll:
                     basket = basket[:-1]
-                    result += 1
+                    result += 2
                     break
                 else:
                     basket.append(doll)
