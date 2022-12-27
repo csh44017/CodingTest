@@ -1,5 +1,7 @@
 # n진법으로 바꾸기  
 
+aa  
+
 ```python  
 def radix(n, q):
     rev_base = ''
