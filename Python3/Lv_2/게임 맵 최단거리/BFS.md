@@ -12,6 +12,30 @@ OPEN List는 큐를 사용해야만 레벨 순서대로 접근이 가능하다.
     - 무한 그래프의 경우에는 결코 해를 찾지도 못하고 끝내지도 못한다.
 
 ```python  
+def BFS(graph, start_node):
+  # Create a queue and add the start node
+  queue = []
+  queue.append(start_node)
+
+  # Create a set to store the visited nodes
+  visited = set()
+
+  # While the queue is not empty
+  while queue:
+    # Dequeue the first node from the queue
+    node = queue.pop(0)
+
+    # If the node has not been visited
+    if node not in visited:
+      # Mark the node as visited
+      visited.add(node)
+
+      # Enqueue the neighbors of the node
+      for neighbor in graph[node]:
+        queue.append(neighbor)
+```  
+
+```python  
 def breadth_first_search(problem):
 
   # a FIFO open_set
